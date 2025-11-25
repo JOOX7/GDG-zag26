@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Basic HTML Form Element</h1>
+<form action="#" method="post" target="_parent">
+<fieldset>
+    <legend>personal information</legend>
+    <label for="name"> Name(Text):</label>
+    <input type="text" name="username" id="name" maxlength="20" required placeholder="Full Name">
+</fieldset>
+<fieldset>
+    <legend>Contact & Security</legend>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required placeholder="user@gmail.com">
+<br><br>
+<label for="password">password:</label>
+<input type="password" id="password" name="password" required placeholder="8charcter" maxlength="8">
+</fieldset>
+<fieldset>
+    <legend>Prefernce</legend>
+    <label for="color">fav color:</label>
+    <input type="color" required name="color">
+</fieldset>
+<fieldset>
+    <legend>Rang & options</legend>
+<label for="Rang">Volume(Range 0-100):</label>
+<input type="range" name="range" minlength="0" maxlength="100" required>
+<br> <br>
+<p> Select Your fav pet:</p><br>
+<input type="radio" id="dog" value="Dog" name="favbet">
+<label for="dog">Dog</label>
+<br>
+<input type="radio" id="cat" value="Cat" name="favbet">
+<label for="cat">Cat</label>
+<br>
+<input type="radio" id="bird" value="Bird" name="favbet">
+<label for="bird">Bird</label><br>
+<p>Interests (Check all that apply)</p><br>
+<input type="checkbox" id="coding" value="coding" name="Interests">
+<label for="coding">Coding</label><br>
+<input type="checkbox" id="music" value="music" name="Interests">
+<label for="music">Music</label><br>
+<input type="checkbox" id="travel" value="travel" name="Interests">
+<label for="travel">Travel</label>
+</fieldset>
+<fieldset>
+    <legend>Selction</legend>
+    <label for="country">Choose a country</label>
+    <select name="country" id="country">
+        <option value="Egypt">Egypt</option>
+        <option value="United states">United States</option>
+        <option value="United Kingdom">United Kingdom</option>
+    </select>
+</fieldset>
+<fieldset>
+    <legend>comments</legend>
+<label for="comments">Your comments</label><br><br>
+    <textarea name="comments" id="comments" rows="10" cols="50"></textarea>
+</fieldset>
+<fieldset>
+    <legend>File Upload</legend>
+    <label for="File">Upload a file </label>
+    <input type="file" name="file" required id="file">
+</fieldset>
+<fieldset>
+    <legend>Specialized Text Inpts</legend>
+    <label for="search">Search this site:</label>
+    <input type="search" id="search" name="search"><br><br>
+    <label for="url"> Your Website URL:</label>
+    <input type="url" name="url" id="url">
+</fieldset>
+<fieldset>
+    <legend>Date & Time</legend>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+    <label for="month">Month:</label>
+    <input type="month" id="month" name="month" required><br><br>
+    <label for="time">time:</label>
+    <input type="time" id="time" name="time"required>
+</fieldset>
+<fieldset>
+    <legend>Detalist</legend>
+    <label for=""> Choose a browser</label>
+</fieldset>
+<button type="submit">Submit Form</button>
+<button type="reset">Clear Form</button>
+</form>
+</body>
+</html>
