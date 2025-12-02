@@ -1,0 +1,57 @@
+.box{
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+text-shadow:  -1px -1px  red ;
+
+}
+.cap .one{
+    text-transform: uppercase;
+}
+.cap .two{text-transform: capitalize;}
+.cap .three{
+    text-transform: lowercase;
+}
+.normal{
+    background-color: #eeeeee;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+    width: 400px;
+}
+.flow{
+    background-color: #eeeeee;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+.etc{
+    background-color: #eeeeee;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a{
+    background-color: #009688;
+    color: white;
+    font-weight: bold;
+    border-bottom: 15px solid #00514a;
+    text-decoration: none;
+    margin: 50px auto;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+
+}
