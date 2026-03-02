@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JS Practice</title>
+</head>
+<body>
+
+<script>
+
+let NumberOne = 10;
+let NumberTwo = 20;
+
+console.log("" + NumberOne + NumberTwo);
+console.log(typeof (NumberOne + NumberTwo));
+console.log(`${NumberOne}${NumberTwo}`);
+console.log(typeof `${NumberOne}${NumberTwo}`);
+console.log(NumberTwo + "\n" + NumberOne);
+console.log(`${NumberTwo}
+${NumberOne}`);
+
+console.log(`I'm In
+\\\\
+Love \\\\ """ ...
+++ With ++
+\\\\\"""\\\""" 
+"""JavaScript"""~`);
+
+
+let a = 21;
+let b = 20;
+
+console.log("" + a + b + a + b + a + b + a + b);
+
+console.log(10 * 20 - 15 % 3 + 190 + 10 - 400); // 0
+
+let num = 3;
+
+console.log(num + num);
+console.log(num + true + true + true);
+console.log(num + true + true + true + true - true);
+console.log(num * (true + true));
+console.log(num * num - num);
+console.log(num ** (true + true) - num);
+
+
+console.log(100_000);
+console.log(5e4 + 5e4);
+console.log(10 * 10000);
+console.log(100 * 1000);
+console.log(1e5);
+console.log(10 ** 5);
+console.log(99999 + 1);
+console.log(100001 - 1);
+console.log(200000 / 2);
+console.log(Number("100000"));
+console.log(parseInt("100000"));
+
+console.log(Math.abs(-9007199254740991));
+console.log(String(9007199254740991).length);
+
+
+let userName = "Elzero";
+
+console.log(userName[0].toLowerCase());
+console.log(userName.charAt(0).toLowerCase());
+console.log(userName.slice(0, 1).toLowerCase());
+console.log(userName.substring(0, 1).toLowerCase());
+console.log(userName.split("")[0].toLowerCase());
+console.log(userName[0].toLowerCase().repeat(3));
+
+let word = "Elzero";
+let letterZ = "z";
+let letterE = "e";
+let letterO = "O";
+
+console.log(word.toLowerCase().includes(letterZ));
+console.log(word.toLowerCase().startsWith(letterE));
+console.log(word.toLowerCase().endsWith(letterO.toLowerCase()));
+
+
+console.log(100 == "100");
+console.log(100 < 1000);
+console.log(110 > 100 && 100 > 10 && 10 < 20);
+console.log(-10 == "-10");
+console.log(- -50 > +"-40");
+console.log(+10 < -"-40");
+console.log(+"10" == 10);
+console.log(!20 === false);
+
+let num1 = 10;
+let num2 = 20;
+
+console.log(num1 < num2);
+console.log(num1 != num2);
+console.log(num2 > num1);
+console.log(num1 + num2 > num2);
+console.log(num2 >= num1);
+console.log(num1 <= num2);
+
+
+num = 9;
+if (num < 10) {
+  console.log("00" + num);
+}
+
+num = 20;
+if (num > 10 && num < 100) {
+  console.log("0" + num);
+}
+
+num = 110;
+if (num >= 100) {
+  console.log(num);
+}
+
+num1 = 9;
+let str = "9";
+let str2 = "20";
+
+if (num1 == str) {
+  console.log(`${num1} Is The Same Value As ${str}`);
+}
+
+if (num1 == str && num1 !== str) {
+  console.log(`${num1} Is The Same Value As ${str} But Not The Same Type`);
+}
+
+if (num1 != str2) {
+  console.log(`${num1} Is Not The Same Value Or The Same Type As ${str2}`);
+}
+
+if (typeof str === typeof str2 && str !== str2) {
+  console.log(`${str} Is The Same Type As ${str2} But Not The Same Value`);
+}
+
+
+let day = "   friday  ";
+
+day = day.trim().toLowerCase();
+day = day.charAt(0).toUpperCase() + day.slice(1);
+
+switch (day) {
+  case "Friday":
+  case "Saturday":
+  case "Sunday":
+    console.log("No Appointments Available");
+    break;
+
+  case "Monday":
+  case "Thursday":
+    console.log("From 10:00 AM To 5:00 PM");
+    break;
+
+  case "Tuesday":
+    console.log("From 10:00 AM To 6:00 PM");
+    break;
+
+  case "Wednesday":
+    console.log("From 10:00 AM To 7:00 PM");
+    break;
+
+  default:
+    console.log("Its Not A Valid Day");
+}
+
+
+let start = 10;
+let end = 100;
+let exclude = 40;
+
+for (let i = start; i <= end; i += start) {
+  if (i === exclude) continue;
+  console.log(i);
+}
+
+start = 10;
+end = 0;
+let stop = 3;
+
+for (let i = start; i >= end; i--) {
+  if (i < 10) console.log("0" + i);
+  else console.log(i);
+
+  if (i === stop) break;
+}
+
+
+let friends = ["Ahmed", "Sayed", "Ali", 1, 2, "Mahmoud", "Amany"];
+let index = 0;
+let counter = 0;
+
+while (index < friends.length) {
+  if (typeof friends[index] === "string" && !friends[index].startsWith("A")) {
+    console.log(`${++counter} => ${friends[index]}`);
+  }
+  index++;
+}
+
+
+function sayHello(theName, theGender) {
+  if (theGender === "Male") {
+    console.log(`Hello Mr ${theName}`);
+  } else if (theGender === "Female") {
+    console.log(`Hello Miss ${theName}`);
+  } else {
+    console.log(`Hello ${theName}`);
+  }
+}
+
+sayHello("Osama", "Male");
+sayHello("Eman", "Female");
+sayHello("Sameh");
+
+function checkStatus(a, b, c) {
+  let name, age, status;
+
+  [a, b, c].forEach(value => {
+    if (typeof value === "string") name = value;
+    if (typeof value === "number") age = value;
+    if (typeof value === "boolean") status = value;
+  });
+
+  if (status) {
+    console.log(`Hello ${name}, Your Age Is ${age}, You Are Available For Hire`);
+  } else {
+    console.log(`Hello ${name}, Your Age Is ${age}, You Are Not Available For Hire`);
+  }
+}
+
+checkStatus("Osama", 38, true);
+checkStatus(38, "Osama", true);
+checkStatus(true, 38, "Osama");
+checkStatus(false, "Osama", 38);
+
+function createSelectBox(startYear, endYear) {
+  const select = document.createElement("select");
+
+  for (let i = startYear; i <= endYear; i++) {
+    const option = document.createElement("option");
+    option.value = i;
+    option.textContent = i;
+    select.appendChild(option);
+  }
+
+  document.body.appendChild(select);
+}
+
+createSelectBox(2000, 2021);
+const itsMe = () => "Iam A Normal Function";
+console.log(itsMe());
+
+const urlCreate = (protocol, web, tld) =>
+  `${protocol}://${web}.${tld}`;
+
+console.log(urlCreate("https", "elzero", "org"));
+
+</script>
+</body>
+</html>
